@@ -6,10 +6,19 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GS0DQH3PM1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GS0DQH3PM1');
+</script>
 
 {% include base_path %}
 
-[Download CV here](CV_Owen.pdf)
+[Download CV here](Zhang_Owen_CV.pdf)
 
 <!-- Education
 ======

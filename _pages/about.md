@@ -3,11 +3,39 @@ permalink: /
 title: "Welcome to Owen's website!"
 excerpt: "Owen"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-<iframe src="https://virtual-owen-0033e3bcabb0.herokuapp.com/" width="100%" height="650px"></iframe>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GS0DQH3PM1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GS0DQH3PM1');
+</script>
 
-**Currently, I am looking for HCI-related PhD positions 2025 Fall.**
+<!-- Loading Screen -->
+<div id="loading-screen" style="text-align: center; padding: 50px; font-size: 24px; font-weight: bold;">
+    Loading Virtual Owen...
+</div>
+
+<!-- Hidden iframe container -->
+<div id="iframe-container" style="display: none;">
+    <iframe src="https://virtual-owen-0033e3bcabb0.herokuapp.com/" 
+            width="100%" height="650px" style="border: none;"></iframe>
+</div>
+
+<!-- JavaScript to show iframe after delay -->
+<script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('loading-screen').style.display = 'none';
+            document.getElementById('iframe-container').style.display = 'block';
+        }, 3000);  // 3-second buffer
+    });
+</script>
+
+**I am currently seeking HCI-related PhD positions for Fall 2025.**
