@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Research"
-permalink: /research/
+title: "Papers"
+permalink: /papers/
 author_profile: true
 ---
 
@@ -25,7 +25,6 @@ author_profile: true
   gtag('config', 'G-GS0DQH3PM1');
 </script>
 
-## Research Interests
 ![image](three_circles.png)
 
 ## Publications

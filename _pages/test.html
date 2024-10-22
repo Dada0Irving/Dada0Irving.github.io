@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Virtual Owen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            position: relative;
+            width: 100%;
+            height: 650px;
+        }
+        #loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        #virtual-owen {
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 650px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="loading-overlay">Loading Virtual Owen...</div>
+        <iframe id="virtual-owen" 
+                src="https://virtual-owen-0033e3bcabb0.herokuapp.com/"></iframe>
+    </div>
+    <script>
+        const iframe = document.getElementById('virtual-owen');
+        const loadingOverlay = document.getElementById('loading-overlay');
+
+        iframe.onload = function () {
+            loadingOverlay.style.display = 'none';
+        };
+
+        setTimeout(() => loadingOverlay.style.display = 'none', 5000);
+    </script>
+</body>
+</html>

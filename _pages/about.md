@@ -8,33 +8,37 @@ redirect_from:
   - /about.html
 ---
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GS0DQH3PM1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GS0DQH3PM1');
-</script>
+<!-- Wrapper for iframe with loading overlay -->
+<div style="position: relative; width: 100%; height: 650px;">
 
-<!-- Loading Screen -->
-<div id="loading-screen" style="text-align: center; padding: 50px; font-size: 24px; font-weight: bold;">
-    Loading Virtual Owen...
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" 
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                background-color: white; color: black; 
+                display: flex; justify-content: center; align-items: center; 
+                font-size: 24px; font-weight: bold; z-index: 2;">
+        Loading Virtual Owen...
+    </div>
+
+    <!-- The iframe -->
+    <iframe id="virtual-owen" 
+            src="https://virtual-owen-0033e3bcabb0.herokuapp.com/" 
+            width="100%" height="650px" 
+            style="border: none; position: absolute; top: 0; left: 0; z-index: 1;"></iframe>
 </div>
 
-<!-- Hidden iframe container -->
-<div id="iframe-container" style="display: none;">
-    <iframe src="https://virtual-owen-0033e3bcabb0.herokuapp.com/" 
-            width="100%" height="650px" style="border: none;"></iframe>
-</div>
-
-<!-- JavaScript to show iframe after delay -->
+<!-- Optional: JavaScript to remove overlay after iframe loads -->
 <script>
     window.addEventListener('load', function() {
-        setTimeout(function() {
-            document.getElementById('loading-screen').style.display = 'none';
-            document.getElementById('iframe-container').style.display = 'block';
-        }, 3000);  // 3-second buffer
+        const iframe = document.getElementById('virtual-owen');
+        const loadingOverlay = document.getElementById('loading-overlay');
+
+        iframe.onload = function() {
+            loadingOverlay.style.display = 'none';  // Hide the overlay when iframe is loaded
+        };
+
+        // Optional: Fallback to hide the overlay after 5 seconds if iframe takes too long
+        setTimeout(() => loadingOverlay.style.display = 'none', 5000);
     });
 </script>
 
