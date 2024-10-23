@@ -112,13 +112,22 @@ redirect_from:
     <script>
         // Show the iframe after 3 seconds and hide the loading buffer
         function loadIframeAfterDelay() {
+            const iframe = document.getElementById('virtual-owen-iframe');
+            const loadingBuffer = document.getElementById('loading-buffer');
+
+            // Hide the loading buffer when the iframe loads
+            iframe.onload = function () {
+                loadingBuffer.style.display = 'none';
+                iframe.style.display = 'block';
+            };
+
+            // Safety fallback: Hide buffer after 10s even if onload doesn't fire
             setTimeout(() => {
-                document.getElementById('loading-buffer').style.display = 'none';
-                document.getElementById('virtual-owen-iframe').style.display = 'block';
-            }, 1000); // 3 seconds delay
+                loadingBuffer.style.display = 'none';
+                iframe.style.display = 'block';
+            }, 1000); // 10 seconds fallback
         }
 
-        // Trigger the loading function on page load
         window.onload = loadIframeAfterDelay;
     </script>
 
