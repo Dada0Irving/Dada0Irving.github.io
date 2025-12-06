@@ -5,6 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+theme: null
+markdown: broken_engine
+
+
 # Site Settings
 locale                   : "en-US"
 title                    : "Owen's Home"
