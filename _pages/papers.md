@@ -41,11 +41,11 @@ author_profile: true
 
 - **[P7]** Yi-Shyuan Chiang, Ho Shan Lam, **Owen Xingjian Zhang**, Eshwar Chandrasekharan. (2022). [“Crumbl: An Awareness-Enhancing Tool for Cookie Collection.”](https://www.usenix.org/system/files/soups2022-poster53_chiang_abstract_final.pdf) *SOUPS 2022 Poster*.
 
+- **[P8]** **Owen Xingjian Zhang**, Sunny Xun Liu, Ilana Shumsky, Jeffrey Hancock, Munmun De Choudhury. (2026). [“Comparing AI Roles and Support Types in Digital Health: A Randomized Factorial Experiment with Patients and Providers.”](/files/jmir_preprint.pdf) *JMIR AI Preprint*.
+
 
 ## Manuscripts in Preparation
 
-- **[M1]** **Owen Xingjian Zhang**, Sunny Xun Liu, Ilana Shumsky, Jeffery Hancock, Munmun De Choudhury. “Exploring AI-Assisted Patient-Provider Dynamics: A Comparative Study of AI Roles and Support Types in Digital Health.” *To be submitted to JMIR AI*.
+- **[M1]** **Owen Xingjian Zhang**, Munmun De Choudhury. “Designing a Chatbot for Adolescent Mental Health Support: An Iterative Participatory Design Approach.” *Manuscript in preparation*.
 
-- **[M2]** **Owen Xingjian Zhang**, Munmun De Choudhury. “Designing a Chatbot for Adolescent Mental Health Support: An Iterative Participatory Design Approach.” *Manuscript in preparation*.
-
-- **[M3]** **Owen Xingjian Zhang**, Mohit Chandra, Munmun De Choudhury. “A Taxonomy of Adolescent Mental Health Stressors on Social Media.” *Manuscript in preparation*.
+- **[M2]** **Owen Xingjian Zhang**, Mohit Chandra, Munmun De Choudhury. “A Taxonomy of Adolescent Mental Health Stressors on Social Media.” *Manuscript in preparation*.
